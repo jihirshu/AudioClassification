@@ -1,0 +1,38 @@
+<?xml version='1.0'?>
+<sdf version='1.6'>
+  <model name='cup'>
+    <link name='cup_base_link'>
+      <pose frame=''>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose frame=''>-0.002974 -0.008419 0.237851 0 -0 0</pose>
+        <mass>67.9184</mass>
+        <inertia>
+          <ixx>3.97207</ixx>
+          <ixy>-0.00341811</ixy>
+          <ixz>-0.0764064</ixz>
+          <iyy>4.23328</iyy>
+          <iyz>-0.075981</iyz>
+          <izz>0.697625</izz>
+        </inertia>
+      </inertial>
+      <collision name='cup_collision'>
+        <pose frame=''>0 0 0.0 0 -0 0</pose>
+        <geometry>
+          <cylinder>
+            <radius>0.0325</radius>
+            <length>0.09</length>
+          </cylinder>          
+        </geometry>
+      </collision>      
+      <visual name='cup_visual'>
+        <pose frame=''>0 0 0.0 0 -0 0</pose>
+        <geometry>
+          <cylinder>
+            <radius>0.0325</radius>
+            <length>0.09</length>
+          </cylinder>          
+        </geometry>
+      </visual> 
+    </link>       
+  </model>
+</sdf>

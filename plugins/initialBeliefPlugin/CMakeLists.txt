@@ -1,0 +1,2 @@
+ADD_INITIAL_BELIEF_PLUGIN(audioClassificationInitialBeliefPlugin ${CMAKE_CURRENT_LIST_DIR}/AudioClassificationInitialBeliefPlugin.cpp)
+target_include_directories(audioClassificationInitialBeliefPlugin PRIVATE ${ROOT_PATH}/plugins/shared/)

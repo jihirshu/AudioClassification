@@ -1,0 +1,1 @@
+ADD_HEURISTIC_PLUGIN(audioClassificationHeuristicPlugin ${CMAKE_CURRENT_LIST_DIR}/AudioClassificationHeuristicPlugin.cpp)

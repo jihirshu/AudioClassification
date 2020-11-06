@@ -1,0 +1,1 @@
+ADD_REWARD_PLUGIN(audioClassificationRewardPlugin ${CMAKE_CURRENT_LIST_DIR}/AudioClassificationRewardPlugin.cpp)

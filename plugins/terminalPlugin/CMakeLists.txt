@@ -1,0 +1,2 @@
+ADD_TERMINAL_PLUGIN(audioClassificationTerminalPlugin ${CMAKE_CURRENT_LIST_DIR}/AudioClassificationTerminalPlugin.cpp)
+target_include_directories(audioClassificationTerminalPlugin PRIVATE ${ROOT_PATH}/plugins/shared/)
