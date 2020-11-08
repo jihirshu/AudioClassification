@@ -7,7 +7,7 @@ Clone the repo into a desired location. In this example we will use the local De
 ## Installation:
     cd ~/Desktop
     git clone https://github.com/hoergems/AudioClassification.git
-    mkdir ObservationService && cd Observation
+    mkdir ObservationService && cd ObservationService
     mkdir src
     ln -s ~/Desktop/AudioClassification/ObservationService ~/Desktop/ObservationService/src
     catkin_make
