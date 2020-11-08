@@ -1,3 +1,5 @@
+This is an implementation of a robust manipulation strategy based solely on audio feedback. More details can be obtained by reading the report pdf file.
+
 # AudioClassification
 
 
@@ -44,7 +46,9 @@ On the third window run the following commands :
     source ~/Desktop/ObservationService/devel/setup.bash
     rosrun ObservationService listener.py
 
-![Alt text](block_diagram.jpeg)
+Remember to setup the table at a height of 0.74 m from the ground. The objects used in the experiment can be observed in the figure 1 below. 
+
+![Figure 2](block_diagram.jpeg)
 
 The robot used for the implementation of the model was Kinova Movo. The model uses OPPT for obtaining an optimal policy of the POMDP problem in real time. The block diagram in Figure above provides an idea regarding the architecture of the software model, and how information is exchanged between modules. There are 3 entities running on the planning PC : OPPT, observation service node and listener node. When OPPT decides that an observation generating action needs to be executed, it sets the value of a ROS param to be true. The listener node, which is repeatedly scanning the value of that param, starts recording the observation and when the param is set to false by OPPT, the recording stops and the audio file is saved to disk. Then, when OPPT requires the observation, a service request through ROS is sent to Observation service, which analyzes the saved audio signal and classifies the signal to its nearest cluster mean. OPPT is also linked to the robot via ethernet and ROS and transmits action messages to the robot and reads joint angle data periodically.
 
