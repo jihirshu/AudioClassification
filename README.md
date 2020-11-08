@@ -61,4 +61,4 @@ Initial Belief PLugin - Dr. Marcus Hoerger\
 Transition PLugin - Dr. Marcus Hoerger / Jihirshu Narayan \
 Observation Plugin - Jihirshu Narayan \
 Reward Plugin - Jihirshu Narayan \
-Terminal Plugin - Jihirshu Narayan 
+Terminal Plugin - Jihirshu Narayan \
