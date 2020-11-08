@@ -7,9 +7,9 @@ Clone the repo into a desired location. In this example we will use the local De
 ## Installation:
     cd ~/Desktop
     git clone https://github.com/hoergems/AudioClassification.git
-    mkdir Observation && cd Observation
+    mkdir ObservationService && cd Observation
     mkdir src
-    ln -s ~/Desktop/AudioClassification/ObservationService ~/Desktop/Observation/src
+    ln -s ~/Desktop/AudioClassification/ObservationService ~/Desktop/ObservationService/src
     catkin_make
     cd ~/Desktop
     cd AudioClassification && mkdir build && cd build
@@ -37,6 +37,7 @@ On the second window run the following commands :
 
     source <install folder>/share/oppt/setup.sh
     source ~/Desktop/ObservationService/devel/setup.bash
+    cd ~/Desktop/AudioClassification/ObservationService/scripts
     rosrun ObservationService serviceNode.py
 
 
